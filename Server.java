@@ -18,11 +18,9 @@ public Server( JTextArea textServer){
     this.textServer=textServer;
 }
 
-    //itialiser le port et le nombre maximum de connexions acceptées par le serveur
 	private final int port = 12345;
       private DataInputStream in;
     private DataOutputStream out;
-    //Nous créons une liste de sockets, où nous allons stocker les sockets qui sont connectés
     private LinkedList<Socket> clients = new LinkedList<Socket>();
    
 

@@ -616,8 +616,6 @@
                       <Image iconType="3" name="/javaapplication/images/export1.png"/>
                     </Property>
                     <Property name="toolTipText" type="java.lang.String" value="Export the Key&#xe9;"/>
-                    <Property name="toolTipText" type="java.lang.String" value="Export the Key&#xe9;"/>
-
                   </Properties>
                   <Events>
                     <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="jLabel21MouseClicked"/>

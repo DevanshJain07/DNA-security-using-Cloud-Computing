@@ -56,7 +56,6 @@ public class AES {
             e.printStackTrace();
         }
     }
-//methode pour crypter
     public static String encrypt(String strToEncrypt, String secret)
     {
         try
@@ -74,7 +73,6 @@ public class AES {
         return null;
     }
     
-//methode pour decrypter
     public static String decrypt(String strToDecrypt, String secret)
     {
         try

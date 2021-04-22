@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package javaapplication;
  
 import java.io.BufferedReader;
@@ -953,10 +948,8 @@ public class Application extends javax.swing.JFrame {
     jLabel15.setIcon(A); 
          
     }//GEN-LAST:event_jLabel10MouseClicked
-//cas de fichier text
      if(ext.contains(".txt")) {
  
-   //lire le contenu de fichier text
    try{
         FileReader reader=new FileReader(path);
 	BufferedReader buffer=new BufferedReader(reader); 
