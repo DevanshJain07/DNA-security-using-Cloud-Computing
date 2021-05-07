@@ -18,6 +18,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Base64;
 import javax.crypto.Cipher;
+//This class provides the functionality of a cryptographic cipher for encryption and 
+//decryption. It forms the core of the Java Cryptographic Extension (JCE) framework.
 import javax.crypto.spec.SecretKeySpec;
 import javax.swing.JFileChooser;
 

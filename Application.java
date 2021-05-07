@@ -1434,18 +1434,11 @@ else{
     }//GEN-LAST:event_jLabel22MouseClicked
 
     private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
- /*  if(jTextField2.getText()!=null){
-     String text=jTextField2.getText(); 
-      
-     byte[] textkey3 = rsa.decryptRSA(Base64.getMimeDecoder().decode(text));
- 
-       jTextField2.setText(new String(textkey3) );
-     }    else */
+
         if(!jTextArea2.getText().equals(""))  {
        String message=jTextArea2.getText();
          String[] tableau=message.split(":");
          String text=tableau[tableau.length-1];
-   //      System.out.println(tableau[tableau.length-1]);
          byte[] textkey4 = rsa.decryptRSA(Base64.getMimeDecoder().decode(text));
     
        jTextField2.setText( new String(textkey4) );   

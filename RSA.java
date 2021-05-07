@@ -1,6 +1,4 @@
 package javaapplication;
- 
-
 import java.math.BigInteger;
 import java.util.Random;
 import java.io.*;
@@ -15,7 +13,6 @@ public class RSA {
 	private BigInteger d;
 	private int bitlength = 62;
 	private int blocksize = 256;
-
 	private Random r;
 
 	public RSA() {
@@ -24,7 +21,7 @@ public class RSA {
                 long z=1678030687;
                  p = BigInteger.valueOf(x);
 	 	 q = BigInteger.valueOf(y);
-	 	 e=	BigInteger.valueOf(z);
+	 	 e=  BigInteger.valueOf(z);
 		N = p.multiply(q);
 		phi = p.subtract(BigInteger.ONE).multiply(q.subtract(BigInteger.ONE));
 
@@ -32,11 +29,7 @@ public class RSA {
 	
 			e.add(BigInteger.ONE);		//e=e+1
 		}
-
 		d = e.modInverse(phi);
-	
-	
-
 }
 	public RSA(BigInteger e, BigInteger d, BigInteger N) {
 
@@ -73,14 +66,12 @@ public static String bytesToString(byte[] encrypted) {
 		for (byte b : encrypted) {
 			test += Byte.toString(b);
 		}
-
 		return test;
 	}
 
 	// Encrypt message
 
 	public byte[] encryptRSA(byte[] message) {
-		
 		return (new BigInteger(message)).modPow(e, N).toByteArray();
 	}
 
