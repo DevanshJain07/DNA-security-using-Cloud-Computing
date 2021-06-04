@@ -53,11 +53,12 @@ public class RSA {
 
 		byte[] encrypted = rsa.encryptRSA(teststring.getBytes());
 		System.out.println("Encrypted String in Bytes: " + bytesToString(encrypted));
+                System.out.println("Encrypted String in Bytes: " + encrypted);
 		//  decrypt
 		byte[] decrypted = rsa.decryptRSA(encrypted);
 		System.out.println("Decrypted String in Bytes: " + bytesToString(decrypted));
 		System.out.println("Decrypted String: " + new String(decrypted));
-
+                System.out.println("Decrypted String: " + decrypted);
 	}
 
 public static String bytesToString(byte[] encrypted) {
