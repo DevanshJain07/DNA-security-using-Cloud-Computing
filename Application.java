@@ -144,7 +144,7 @@ public class Application extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(246, 248, 250));
 
         jLabel8.setBackground(new java.awt.Color(51, 255, 255));
-        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/images/gif5.gif"))); // NOI18N
+        jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/images/homepage.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -652,7 +652,7 @@ public class Application extends javax.swing.JFrame {
 
         jPanel4.setBackground(new java.awt.Color(246, 248, 250));
 
-        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/images/about.jpg"))); // NOI18N
+        jLabel27.setIcon(new javax.swing.ImageIcon(getClass().getResource("/javaapplication/images/about.jpeg"))); // NOI18N
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
         jPanel4.setLayout(jPanel4Layout);
@@ -1421,18 +1421,15 @@ else{
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField4ActionPerformed
-
+//encrypt
     private void jLabel22MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel22MouseClicked
      if(!jTextField2.getText().equals("" )){
-        String text=jTextField2.getText();
-      textkey2 = rsa.encryptRSA(text.getBytes());
-    
-        jTextField2.setText(Base64.getEncoder().encodeToString(textkey2));
-      
-        
+         String text=jTextField2.getText();
+         textkey2 = rsa.encryptRSA(text.getBytes());
+         jTextField2.setText(Base64.getEncoder().encodeToString(textkey2));
      }
     }//GEN-LAST:event_jLabel22MouseClicked
-
+//decrypt
     private void jLabel23MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel23MouseClicked
 
         if(!jTextArea2.getText().equals(""))  {
